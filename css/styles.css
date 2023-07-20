@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #9ACA3C;
+  background-color: #000000;
+}
+
+header {
+  text-align: center;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.books h2 {
+  text-align: center;
+}
+.books form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.books form label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.books form input,
+.books form select {
+  display: block;
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.books form input[type=submit] {
+  background-color: #9ACA3C;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.books form input[type=submit]:hover {
+  background-color: #0069d9;
+}
+
+.offering {
+  text-align: center;
+}
+.offering .offering-detail--title {
+  margin-bottom: 30px;
+}
+.offering .offering-detail--title h3 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+.offering .offering-detail--title p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+.offering .offering-cards--container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.offering .offering-cards--container .offering-detail--card {
+  margin: 0 15px 15px 15px;
+  max-width: 100%;
+  width: calc(100% - 30px);
+  text-align: center;
+}
+.offering .offering-cards--container .offering-detail--card img {
+  max-width: 100%;
+}
+.offering .offering-cards--container .offering-detail--card h4 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.offering .offering-cards--container .offering-detail--card .offering--card-body {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .offering .offering-cards--container {
+    justify-content: flex-start;
+  }
+  .offering .offering-cards--container .offering-detail--card {
+    max-width: calc(33.33% - 30px);
+    width: calc(33.33% - 30px);
+    margin: 0 15px 30px 15px;
+  }
+  .offering .offering-cards--container .offering-detail--card:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.us {
+  background-color: black;
+  padding: 2rem 5vw;
+  text-align: center;
+}
+.us .us-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.us .us-text {
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.team h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.team .team-members {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  margin: 2rem 0px;
+}
+@media (min-width: 768px) {
+  .team .team-members {
+    overflow-x: hidden;
+  }
+}
+.team .team-members .team-member {
+  margin: 0 1rem;
+  height: 15%;
+}
+@media (min-width: 768px) {
+  .team .team-members .team-member {
+    flex-basis: calc(50% - 1rem);
+  }
+}
+@media (min-width: 1024px) {
+  .team .team-members .team-member {
+    flex-basis: calc(33.333333% - 1rem);
+  }
+}
+.team .team-members .team-member img {
+  border-radius: 50%;
+  max-width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.team .team-members .team-member h4 {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.team .team-members .team-member p {
+  font-size: 0.75rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.community .community-title {
+  text-align: center;
+  padding-bottom: 1em;
+}
+.community .carousel-container {
+  width: 100%;
+  overflow: auto;
+  position: relative;
+}
+.community .carousel-wrapper {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.community .carousel-slide {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.community .community-item {
+  flex: 0 0 18.5em;
+  margin: 0.5em;
+  background-color: #9ACA3C;
+  color: #000000;
+  padding: 30px;
+  box-shadow: 0px 0px 12px 0px rgb(118, 191, 50);
+}
+.community .community-item:last-child {
+  margin-right: 0;
+}
+.community .community-item img {
+  width: 100%;
+  height: auto;
+  max-width: 15em;
+  display: block;
+  margin: 0 auto;
+}
+.community .community-description {
+  margin-top: 10px;
+}
+.community .community-description h4, .community .community-description p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+  color: #9ACA3C;
+  padding: 1.5em;
+  text-align: center;
+}
+footer p {
+  padding-top: 0.3em;
+}
+footer .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding-top: 0.5em;
+}
+footer .social-media img {
+  width: 36px;
+  height: auto;
+}/*# sourceMappingURL=styles.css.map */
