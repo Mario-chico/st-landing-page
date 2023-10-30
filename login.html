@@ -25,6 +25,7 @@
       height: 100vh;
       display: grid;
       place-items: center;
+      background: #282222;
     }
     .form-container {
       display: grid;
@@ -104,14 +105,15 @@
       <img src="./assets/imgs/gymlogo.png" alt="Logo de Sthenos" class="logo">
       <form action="" class="form">
         <label for="email">Email</label>
-        <input type="text" name="" id="email" placeholder="tucoreeo@correo" class="input input-email">
+        <input type="text"  name="" id="email" placeholder="tucoreeo@correo" class="input input-email" >
         <label for="password">Password</label>
         <input type="password" name="" id="re-password" placeholder="********" class="input input-email">
-        <input type="submit" value="Iniciar Sesión" class="primary-button login-button">
+        <input type="submit" value="Iniciar Sesión" class="primary-button login-button" >
 				<a href="">Olvide mi contraseña</a>
       </form>
-			<button class="secondary-button signup-button">Registrarse</button>
+			<button class="secondary-button signup-button" onclick="dataValidation()">Registrarse</button>
     </div>
   </div>
+  <script src="access.js"></script>
 </body>
 </html>
