@@ -9,8 +9,6 @@ const form = document.querySelector(".form");
 
 form.addEventListener("submit",  dataValidation)
 
-
-
 function dataValidation(event) {
   event.preventDefault();
   const em = email.value;
@@ -19,7 +17,7 @@ function dataValidation(event) {
 
 
     if (em === "mario" && pas === "mario") {
-        window.location.href = "./index.html"
+        window.location.href = "./pruebas.html"
     }else{
       window.location.href = "./login.html"
     }

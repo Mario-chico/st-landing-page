@@ -9,8 +9,27 @@ body {
   background-color: #000000;
 }
 
-header {
+.headers {
   text-align: center;
+}
+.headers h1, .headers h2 {
+  margin: 0.5em 0;
+}
+
+.header-p {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+}
+.header-p a {
+  text-decoration: none;
+  color: #9ACA3C;
+  font-size: larger;
+}
+.header-p a:hover {
+  color: #7da62d;
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
 }
 
 .books {
@@ -182,15 +201,7 @@ header {
   width: 100%;
   overflow: auto;
   position: relative;
-}
-.community .carousel-wrapper {
   display: flex;
-  width: 100%;
-  position: relative;
-}
-.community .carousel-slide {
-  display: flex;
-  flex-wrap: nowrap;
 }
 .community .community-item {
   flex: 0 0 18.5em;
@@ -239,4 +250,97 @@ footer .social-media {
 footer .social-media img {
   width: 36px;
   height: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1em;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  list-style: none;
+}
+nav ul li {
+  font-size: 1.3em;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #9ACA3C;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.pruebas-rango-uno {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.pruebas-rango-uno section {
+  background-color: #7C6A0A;
+  width: 21vw;
+  padding: 1em;
+  border-radius: 1em;
+  text-align: center;
+}
+.pruebas-rango-uno section ul {
+  list-style: none;
+  color: #ffffff;
+}
+.pruebas-rango-uno section ul li {
+  margin: 0.5em 0;
+  font-size: 1.5em;
+}
+.pruebas-rango-uno section .aceptar-reto {
+  cursor: pointer;
+  background-color: #9ACA3C;
+  color: white;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  font-size: larger;
+  border: 1px solid #9ACA3C;
+}
+.pruebas-rango-uno section .aceptar-reto:hover {
+  color: #9ACA3C;
+  background-color: #ffffff;
+}
+
+.pruebas-rango-dos {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.pruebas-rango-dos section {
+  background-color: #7C6A0A;
+  width: 21vw;
+  padding: 1em;
+  border-radius: 1em;
+  text-align: center;
+}
+.pruebas-rango-dos section ul {
+  list-style: none;
+  color: #ffffff;
+}
+.pruebas-rango-dos section ul li {
+  margin: 0.5em 0;
+  font-size: 1.5em;
+}
+.pruebas-rango-dos section .aceptar-reto {
+  cursor: pointer;
+  background-color: #9ACA3C;
+  color: white;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  font-size: larger;
+  border: 1px solid #9ACA3C;
+}
+.pruebas-rango-dos section .aceptar-reto:hover {
+  color: #9ACA3C;
+  background-color: #ffffff;
 }/*# sourceMappingURL=styles.css.map */

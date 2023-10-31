@@ -12,8 +12,29 @@ body{
   background-color: $secundary-color;
 }
 
-header {
+.headers {
   text-align: center;
+
+  h1, h2 {
+    margin: 0.5em 0;
+  }
+  
+}
+
+.header-p {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  
+  a{
+    text-decoration: none;
+    color: $primary-color;
+    font-size: larger;
+  }
+  a:hover{
+    color: darken($primary-color, 10%);
+    text-decoration: underline 2px;
+  }
 }
 
 .books {
@@ -209,20 +230,7 @@ header {
       width: 100%;
       overflow: auto;
       position: relative;
-    }
-  
-    // Set the width of the carousel wrapper
-    .carousel-wrapper {
       display: flex;
-      width: 100%;
-      position: relative;
-      //animation: slide 10s infinite; // Add animation to automatically slide the images
-    }
-  
-    // Set the width and margin of each slide item
-    .carousel-slide {
-      display: flex;
-      flex-wrap: nowrap;
     }
   
     // Set the width of each community item and position them beside each other
@@ -278,4 +286,103 @@ header {
       height: auto;
     }
 
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1em;
+    ul{
+      display: flex;
+      flex-direction: row;
+      gap: 2em;
+      list-style: none;
+      li{
+        font-size: 1.3em;
+        a{
+          text-decoration: none;
+          color: $primary-color;
+        }
+        a:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    
+  }
+
+  .pruebas-rango-uno{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    section{
+      background-color: $primary-text-color;
+      width: 21vw;
+      padding: 1em;
+      border-radius: 1em;
+      text-align: center;
+      ul{
+        list-style: none;
+        color: $tertiary-color;
+        li{
+          margin: 0.5em 0;
+          font-size: 1.5em;
+        }
+      }
+      .aceptar-reto{
+        cursor: pointer;
+        background-color: $primary-color;
+        color: white;
+        border-radius:  1em;
+        padding: 0.5em 1em;
+        font-size: larger;
+        border: 1px solid $primary-color;
+      }
+      .aceptar-reto:hover{
+        color: $primary-color;
+        background-color: $tertiary-color;
+        
+      }
+    }
+    
+  }
+
+  .pruebas-rango-dos{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    section{
+      background-color: $primary-text-color;
+      width: 21vw;
+      padding: 1em;
+      border-radius: 1em;
+      text-align: center;
+      ul{
+        list-style: none;
+        color: $tertiary-color;
+        li{
+          margin: 0.5em 0;
+          font-size: 1.5em;
+        }
+      }
+      .aceptar-reto{
+        cursor: pointer;
+        background-color: $primary-color;
+        color: white;
+        border-radius:  1em;
+        padding: 0.5em 1em;
+        font-size: larger;
+        border: 1px solid $primary-color;
+      }
+      .aceptar-reto:hover{
+        color: $primary-color;
+        background-color: $tertiary-color;
+        
+      }
+    }
+    
   }
