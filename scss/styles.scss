@@ -1,15 +1,15 @@
-$primary-color:#9ACA3C;
-$secundary-color:#000000;
-$tertiary-color:#ffffff;
-$primary-text-color:#7C6A0A;
+$primary-color:#f6f3ec;
+$secundary-color:#c3ef7b;
+$primary-text-color:#000000;
+$color: rgb(246 243 236);
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-  color: $primary-color;
-  background-color: $secundary-color;
+  color: $primary-text-color;
+  background-color: $primary-color;
 }
 
 .headers {
@@ -28,11 +28,11 @@ body{
   
   a{
     text-decoration: none;
-    color: $primary-color;
+    color: $primary-text-color;
     font-size: larger;
   }
   a:hover{
-    color: darken($primary-color, 10%);
+    color: darken($secundary-color, 10%);
     text-decoration: underline 2px;
   }
 }
@@ -71,7 +71,7 @@ body{
       }
       
       input[type="submit"] {
-        background-color: $primary-color;
+        background-color: $primary-text-color;
         color: #fff;
         border: none;
         border-radius: 5px;
@@ -79,7 +79,9 @@ body{
         cursor: pointer;
       
         &:hover {
-          background-color: #0069d9;
+          background-color: $secundary-color;
+          color: $primary-text-color;
+          font-weight: 600;
         }
       }
     }
@@ -151,7 +153,7 @@ body{
   }
   
   .us {
-    background-color: black;
+    background-color: $secundary-color;
     padding: 2rem 5vw;
     text-align: center;
     
@@ -237,10 +239,10 @@ body{
     .community-item {
       flex: 0 0 18.5em;
       margin: 0.5em;
-      background-color: $primary-color;
-      color: $secundary-color;
+      background-color: $secundary-color;
+      color: $primary-text-color;
       padding: 30px;
-      box-shadow: 0px 0px 12px 0px rgb(118 191 50);
+      box-shadow: 0px 0px 12px 0px $primary-color;
       &:last-child {
         margin-right: 0;
       }
@@ -310,39 +312,85 @@ body{
     }
     
   }
-
+  .titulo-pruebas{
+    text-align: center;
+    margin-bottom: 1rem;
+  }
   .pruebas-rango-uno{
-    margin-top: 2em;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
 
     section{
-      background-color: $primary-text-color;
-      width: 21vw;
-      padding: 1em;
+      width: 90%;
+      background-color: $secundary-color;
+      color: $primary-text-color;
+      margin: 0.5em 0;
       border-radius: 1em;
       text-align: center;
-      ul{
-        list-style: none;
-        color: $tertiary-color;
+      padding: 1em 0;
+      ol{
+        color: $primary-text-color;
+        margin: 1em 0;
+        padding: 0 0.5em 0 1.4em;
+        max-width: 100%;
         li{
           margin: 0.5em 0;
-          font-size: 1.5em;
+          font-size: 1em;
+          text-align: start;
         }
       }
       .aceptar-reto{
         cursor: pointer;
-        background-color: $primary-color;
-        color: white;
+        background-color: $primary-text-color;
+        color: $secundary-color;
         border-radius:  1em;
         padding: 0.5em 1em;
         font-size: larger;
-        border: 1px solid $primary-color;
+        border: 1px solid $primary-text-color;
       }
       .aceptar-reto:hover{
         color: $primary-color;
-        background-color: $tertiary-color;
+        background-color: $primary-color;
+        
+      }
+      #dialog{
+        margin: 1em auto;
+        border-radius: 1em;
+        .modal-reto{
+          width: 80vw;
+          height: 85vh;
+          background-color: $primary-color;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1.5em;
+          padding: 2em 0;
+        }
+      }
+      
+    }
+    @media (min-width: 1024px) {
+      
+      margin-top: 2em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+  
+      section{
+        padding: 1em;
+        width: 32vw;
+        #dialog{
+          margin: 12vh auto;
+          .modal-reto{
+            width: 30vw;
+            height: 75vh;
+          }
+        }
+        #dialog::backdrop{
+          background-color: #000000;
+          opacity: 0.6;
+        }
         
       }
     }
@@ -350,23 +398,27 @@ body{
   }
 
   .pruebas-rango-dos{
-    margin-top: 2em;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
 
     section{
-      background-color: $primary-text-color;
-      width: 21vw;
-      padding: 1em;
+      width: 90%;
+      background-color: $secundary-color;
+      color: $primary-text-color;
+      margin: 0.5em 0;
       border-radius: 1em;
       text-align: center;
-      ul{
-        list-style: none;
-        color: $tertiary-color;
+      padding: 1em 0;
+      ol{
+        color: $primary-text-color;
+        margin: 1em 0;
+        padding: 0 0.5em 0 1.4em;
+        max-width: 100%;
         li{
           margin: 0.5em 0;
-          font-size: 1.5em;
+          font-size: 1em;
+          text-align: start;
         }
       }
       .aceptar-reto{
@@ -380,7 +432,76 @@ body{
       }
       .aceptar-reto:hover{
         color: $primary-color;
-        background-color: $tertiary-color;
+        background-color: $primary-color;
+        
+      }
+    }
+    @media (min-width: 1024px) {
+      
+      margin-top: 2em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      
+  
+      section{
+        padding: 1em;
+        width: 32vw;
+        
+      }
+    }
+    
+  }
+
+  .pruebas-rango-tres{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    section{
+      width: 90%;
+      background-color: $secundary-color;
+      color: $primary-text-color;
+      margin: 0.5em 0;
+      border-radius: 1em;
+      text-align: center;
+      padding: 1em 0;
+      ol{
+        color: $primary-text-color;
+        margin: 1em 0;
+        padding: 0 0.5em 0 1.4em;
+        max-width: 100%;
+        li{
+          margin: 0.5em 0;
+          font-size: 1em;
+          text-align: start;
+        }
+      }
+      .aceptar-reto{
+        cursor: pointer;
+        background-color: $primary-color;
+        color: white;
+        border-radius:  1em;
+        padding: 0.5em 1em;
+        font-size: larger;
+        border: 1px solid $primary-color;
+      }
+      .aceptar-reto:hover{
+        color: $primary-color;
+        background-color: $primary-color;
+        
+      }
+    }
+    @media (min-width: 1024px) {
+      
+      margin-top: 2em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+  
+      section{
+        padding: 1em;
+        width: 32vw;
         
       }
     }
