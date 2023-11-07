@@ -314,7 +314,7 @@ body{
   }
   .titulo-pruebas{
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   .pruebas-rango-uno{
     display: flex;
@@ -380,6 +380,7 @@ body{
       section{
         padding: 1em;
         width: 32vw;
+        min-height: 78vh;
         #dialog{
           margin: 12vh auto;
           .modal-reto{
@@ -437,20 +438,16 @@ body{
       }
     }
     @media (min-width: 1024px) {
-      
       margin-top: 2em;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
-      
-  
       section{
         padding: 1em;
         width: 32vw;
-        
+        min-height: 78vh;
       }
     }
-    
   }
 
   .pruebas-rango-tres{
@@ -493,16 +490,23 @@ body{
       }
     }
     @media (min-width: 1024px) {
-      
       margin-top: 2em;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
-  
       section{
         padding: 1em;
         width: 32vw;
+        min-height: 85vh;
         
+      }
+      .prueba-nivel-dos{
+        position: relative;
+        .aceptar-reto{
+        position: absolute;
+        bottom: 3vh;
+        right: calc(100% - 65%);
+        }
       }
     }
     

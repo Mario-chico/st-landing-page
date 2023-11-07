@@ -279,7 +279,7 @@ nav ul li a:hover {
 
 .titulo-pruebas {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .pruebas-rango-uno {
@@ -344,6 +344,7 @@ nav ul li a:hover {
   .pruebas-rango-uno section {
     padding: 1em;
     width: 32vw;
+    min-height: 78vh;
   }
   .pruebas-rango-uno section #dialog {
     margin: 12vh auto;
@@ -406,6 +407,7 @@ nav ul li a:hover {
   .pruebas-rango-dos section {
     padding: 1em;
     width: 32vw;
+    min-height: 78vh;
   }
 }
 
@@ -457,5 +459,14 @@ nav ul li a:hover {
   .pruebas-rango-tres section {
     padding: 1em;
     width: 32vw;
+    min-height: 85vh;
+  }
+  .pruebas-rango-tres .prueba-nivel-dos {
+    position: relative;
+  }
+  .pruebas-rango-tres .prueba-nivel-dos .aceptar-reto {
+    position: absolute;
+    bottom: 3vh;
+    right: 35%;
   }
 }/*# sourceMappingURL=styles.css.map */
