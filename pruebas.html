@@ -31,7 +31,7 @@
     <button type="button" class="btnElegir" onclick="getElementById('dialog').showModal()">⚡</button>
     <dialog id="dialog">
       <div class="modal-reto" >
-        <form action="" >
+        <form action="" onsubmit="datosSeleccionados(); return false">
           <label for="niveles">Que nivel vas a elegir?</label>
           <select name="niveles" id="niveles">
             <option value="1">1</option>
@@ -54,11 +54,11 @@
           <input type="checkbox" name="transferencia" value="transferencia" id="">
           <label for="efectivo">Efectivo</label>
           <input type="checkbox" name="efectivo" value="efectivo" id="">
-          <button>Confirmar</button>
+          <button >Confirmar</button>
         </form>
         
-        <button onclick="getElementById('dialog').close()">Cerrar</button>
       </div>
+      <button class="btn-cerrar" onclick="document.getElementById('dialog').close()">X</button>
     </dialog>
     <article class="pruebas-rango-uno">
       <section class="prueba-nivel-uno">

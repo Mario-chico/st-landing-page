@@ -271,7 +271,7 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: #f6f3ec;
+  color: #000000;
 }
 nav ul li a:hover {
   text-decoration: underline;
@@ -312,9 +312,18 @@ nav ul li a:hover {
   background-color: #f6f3ec;
   display: flex;
   flex-direction: column;
+  padding: 2em 1em;
+}
+#dialog .modal-reto form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 1.5em;
-  padding: 2em 0;
+}
+#dialog .btn-cerrar {
+  position: absolute;
+  right: 0;
+  top: 4%;
 }
 
 .pruebas-rango-uno {
