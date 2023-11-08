@@ -312,10 +312,46 @@ body{
     }
     
   }
+  #pruebas-main{
+    @media (min-width: 1023px) {
+      .btnElegir:hover{
+        color: $primary-color;
+        background-color: $primary-color;
+      }
+    }
+  }
   .titulo-pruebas{
     text-align: center;
     margin-bottom: 0.5rem;
   }
+  .btnElegir{
+    position: fixed;
+    right: 0.5em;
+    top: 5.5em;
+    cursor: pointer;
+    background-color: $primary-text-color;
+    color: $secundary-color;
+    border-radius: 1.5em;
+    padding: 0.3em 0.3em;
+    font-size: larger;
+    border: 1px solid $primary-text-color;
+  }
+  
+  #dialog{
+    margin: 1em auto;
+    border-radius: 1em;
+    .modal-reto{
+      width: 80vw;
+      height: 85vh;
+      background-color: $primary-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5em;
+      padding: 2em 0;
+    }
+  }
+  
   .pruebas-rango-uno{
     display: flex;
     align-items: center;
@@ -353,22 +389,7 @@ body{
         color: $primary-color;
         background-color: $primary-color;
         
-      }
-      #dialog{
-        margin: 1em auto;
-        border-radius: 1em;
-        .modal-reto{
-          width: 80vw;
-          height: 85vh;
-          background-color: $primary-color;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 1.5em;
-          padding: 2em 0;
-        }
-      }
-      
+      }      
     }
     @media (min-width: 1024px) {
       
@@ -385,7 +406,7 @@ body{
           margin: 12vh auto;
           .modal-reto{
             width: 30vw;
-            height: 75vh;
+            height: 69vh;
           }
         }
         #dialog::backdrop{
@@ -445,7 +466,7 @@ body{
       section{
         padding: 1em;
         width: 32vw;
-        min-height: 78vh;
+        min-height: 72vh;
       }
     }
   }
@@ -497,16 +518,7 @@ body{
       section{
         padding: 1em;
         width: 32vw;
-        min-height: 85vh;
-        
-      }
-      .prueba-nivel-dos{
-        position: relative;
-        .aceptar-reto{
-        position: absolute;
-        bottom: 3vh;
-        right: calc(100% - 65%);
-        }
+        min-height: 77vh;
       }
     }
     
